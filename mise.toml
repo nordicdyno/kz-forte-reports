@@ -1,0 +1,9 @@
+[tools]
+python = "3.13"
+uv = "latest"
+
+[tasks.forte-parse]
+run = 'uv run python reporter.py'
+
+[tasks.test]
+run = 'uv run pytest'
