@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 
 from tools.forte_generator import SAMPLE_TRANSACTIONS
-from reporter import (
+from budged.parser import (
     DATE_PATTERN,
     SUM_PATTERN,
     _clean_details,

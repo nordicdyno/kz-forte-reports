@@ -5,5 +5,15 @@ uv = "latest"
 [tasks.forte-parse]
 run = 'uv run python reporter.py'
 
+[tasks.mcp]
+run = 'uv run python mcp_server.py'
+
 [tasks.test]
 run = 'uv run pytest'
+
+[tasks.claude-logs]
+run='tail -f ~/Library/Logs/Claude/mcp*.log'
+
+[tasks.mcp-inspector]
+tools = { node = "24" }
+run='npx -y @modelcontextprotocol/inspector uv run python mcp_server.py'
